@@ -6,12 +6,12 @@ require_once __DIR__.'/userAgent.php';
 require __DIR__ . '/smshub.php';
 
 //APIKEY SMSHUB
-$key = '132611U61f19685e6eddbdae10460e97ec041b0';
+$key = '';
 
 if($key == null) {
     die('Masukan apikey di line 9 goblog!!');
 }
-echo '----------- AUTO REFF ONEASET WITH SMSHUB -----------'.PHP_EOL.PHP_EOL;
+echo '----------- AUTO REFF ONEASET BY BONEK ASSOLOLEY -----------'.PHP_EOL.PHP_EOL;
 use Curl\Curl;
 $agent = new userAgent();
 
