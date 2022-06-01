@@ -6,7 +6,7 @@ require_once __DIR__.'/userAgent.php';
 require __DIR__ . '/smshub.php';
 
 //APIKEY SMSHUB
-$key = '';
+$key = '127870U71e26cf7c26b8e316bcbf0fb923f474d';
 
 if($key == null) {
     die('Masukan apikey di line 9 goblog!!');
@@ -156,22 +156,7 @@ for ($ia=0; $ia < $jumlah; $ia++) {
                                         // sleep(30);
                                     } else {
                                         $status = $sms->setStatus($id, 6);
-                                        exit('[ '.date('H:i:s').' ] Gagal Login');
-                                    }
-                                }
-                            } else {
-                                $status = $sms->setStatus($id, 8);
-                                exit('[ '.date('H:i:s').' ] Gagal Mengirim OTP Login');         
-                            }
-                        }
-                    } else {
-                        $status = $sms->setStatus($id, 6);
-                        exit('[ '.date('H:i:s').' ] Gagal Mendaftar');                        
-                    }
-                }
-            } else {
-                $status = $sms->setStatus($id, 8);
-                exit('[ '.date('H:i:s').' ] Gagal Mengirim OTP Daftar');
+                                        exit('[ '.date('H:i:s').' ] Gagal Login'); 
             }
         }
     } else {
